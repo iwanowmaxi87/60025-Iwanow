@@ -1,0 +1,59 @@
+.aboutUsContainer {
+  position: relative;
+  z-index: 10; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh; 
+  text-align: center;
+  padding: 2rem;
+ 
+}
+
+.aboutUsContainer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.aboutUsContainer p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+  line-height: 1.6; 
+}
+
+.aboutCarousel {
+  width: 100%;  
+  margin: 2rem auto; 
+}
+
+.aboutItem img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.aboutCaption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.aboutCaption h3 {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.aboutCaption p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Estilos para el Header */
+.header {
+  position: relative;
+  z-index: 1; 
+}
+
+

@@ -1,0 +1,66 @@
+.footer {
+    background-color: #161616;
+    padding: 2rem 0;
+    
+    
+  }
+
+  .col-md-4{
+    color: #ffffff;
+    
+  }
+  
+  .footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #ccc;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links a {
+    color: #db114e;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+
+  /* Estilos para la columna de suscripción */
+.subscribe-form {
+    margin-top: 10px;
+  }
+  
+  .subscribe-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .subscribe-button {
+    width: 100%;
+    padding: 8px;    
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #db114e;
+    color: #ccc;
+    
+  }

@@ -1,0 +1,108 @@
+/* Estilos generales para el carrusel */
+.ofertaCarousel {
+  width: 70vw; 
+  margin: 0 auto;
+}
+
+
+.ofertaCarousel .carousel-item {  
+  align-items: center;
+  text-align: center;
+
+}
+
+.ofertaCarousel .carousel-item img {
+  width: 50%; 
+  height: auto;
+   
+}
+
+/* Título del carrusel */
+.ofertaTitulo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;  
+  text-decoration: none;
+}
+
+/* Responsive: Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .ofertaCarousel .itemCarousel img {
+    height: 300px; 
+  }
+
+  .ofertaTitulo {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* Estilo de las imágenes pequeñas */
+.ofertImgUno, .ofertImgDos, .ofertImgTres, .ofertImgCuatro, 
+.ofertImgCinco, .ofertImgSeis, .ofertImgSiete, .ofertImgOcho {
+  width: 200px; 
+  height: 150px;
+  object-fit: cover; 
+  transition: transform 0.3s ease;
+   
+}
+
+.ofertImgUno:hover, .ofertImgDos:hover, .ofertImgTres:hover, 
+.ofertImgCuatro:hover, .ofertImgCinco:hover, .ofertImgSeis:hover, 
+.ofertImgSiete:hover, .ofertImgOcho:hover {
+  transform: scale(1.1); 
+}
+
+/* Cambia la imagen al hacer hover */
+.ofertImgUno:hover {   
+  content: url('https://i0.wp.com/kemuelmusica.com/wp-content/uploads/2020/Shure/SHURE_SM7B_01.jpg?fit=1200%2C1200&ssl=1');
+}
+.ofertImgDos:hover {   
+  content: url('https://i0.wp.com/kemuelmusica.com/wp-content/uploads/2020/EHX/EHX_SILENCER_06.jpg?fit=1200%2C1200&ssl=1');
+}
+.ofertImgTres:hover {   
+  content: url('https://i0.wp.com/kemuelmusica.com/wp-content/uploads/2020/VOX/VOX_VT20X_07.jpg?fit=1200%2C1200&ssl=1');
+}
+.ofertImgCuatro:hover {   
+  content: url('https://bairesrocks.vteximg.com.br/arquivos/ids/238386/Cable_kcw_Tecnica-04.jpg?v=637955264095470000');
+}
+.ofertImgCinco:hover {   
+  content: url('https://i0.wp.com/kemuelmusica.com/wp-content/uploads/2020/MARSHALL/MARSHALL_MG101CFX_02.jpg?fit=1200%2C1200&ssl=1');
+}
+.ofertImgSeis:hover {   
+  content: url('https://bairesrocks.vteximg.com.br/arquivos/ids/243126/Guitarra_Transacustica_Tecnica-04.jpg?v=638339510058400000');
+}
+.ofertImgSiete:hover {   
+  content: url('https://bairesrocks.vteximg.com.br/arquivos/ids/244814/0144503506_gtr_hdstckfrt_001_nr.jpg?v=638497561962730000');
+}
+.ofertImgOcho:hover {   
+  content: url('https://i0.wp.com/kemuelmusica.com/wp-content/uploads/2020/Ross/ROSS_AC25C-92.jpg?fit=1200%2C1200&ssl=1');
+}
+
+
+
+/* Detalles de las ofertas */
+.ofertDetails {
+  text-align: center;
+  margin-top: 10px;
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+.ofertDetails h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ofertDetails p {
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.price {  
+  color: #f0120a;
+  font-weight: bold;
+  text-decoration: none;
+}

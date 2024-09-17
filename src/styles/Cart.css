@@ -1,0 +1,24 @@
+.container {
+    margin-top: 20px;
+    
+  }
+  
+  .total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    
+  }
+  
+  .total-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+  
+  .total-section .btn {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  

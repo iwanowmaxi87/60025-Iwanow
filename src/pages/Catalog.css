@@ -1,0 +1,68 @@
+.catalog {
+    padding: 20px;
+    
+  }
+
+  .cart-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+
+  .cart-item-details {
+    flex: 1;
+  }
+  
+  .product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .product-item {
+    width: 18rem;
+    margin-bottom: 20px;
+    
+  }
+  
+  .product-img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+ /* Estilos para el botón en .guitar-item */
+.btn {
+  background-color: #2f3030; 
+  color: #fff;  
+  padding: 5px 15px;   
+  border-radius: 50px; 
+  transition: background-color 0.3s, border-color 0.3s;
+  
+}
+
+/* Estilo del botón cuando se pasa el mouse por encima */
+.btn:hover {
+  background-color: #11e2d8; 
+  color:#fff
+}
+
+/* Estilo del botón cuando se hace clic */
+.btn:active {
+  background-color: #eb0909; 
+  border-color: #0ac949; 
+  outline: none; 
+}
+
+.total-section {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.quantity-selector {
+  margin-top: 10px;
+}

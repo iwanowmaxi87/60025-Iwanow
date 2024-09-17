@@ -1,0 +1,125 @@
+/* Estilos generales del navbar */
+.navbar {
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.849);
+}
+
+/* Espaciado entre los enlaces y el logo */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para los enlaces del navbar */
+.navbar-nav .nav-link {
+  position: relative;
+  margin-right: 1rem;
+  color: #333; /* Color del enlace en modo claro */
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+}
+
+/* Espaciado entre los elementos del menú */
+.nav-item {
+  margin-left: 15px;
+}
+
+.nav-item a:hover {
+  color: #f50000; /* Color al pasar el mouse sobre los enlaces */
+}
+
+/* Estilo para el cart widget */
+.cart-widget {
+  margin-left: auto;
+}
+
+.cart-count {
+  position: absolute; 
+  background-color: #f00;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+}
+
+/* Estilo para la imagen del logo */
+.imgLogo {
+  height: 120px;
+}
+
+/* Estilo del botón toggler (menú colapsado en pantallas pequeñas) */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23000" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E');
+}
+
+/* Mueve los elementos del navbar a la derecha */
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* Estilos generales para el modo oscuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Estilos del navbar en modo oscuro */
+.navbar-dark {
+  background-color: #333 !important;
+  color: #fff;
+}
+
+/* Cambia los colores de los enlaces en modo oscuro */
+.navbar-dark .nav-link {
+  color: #fff !important;
+}
+
+.navbar-dark .nav-link:hover {
+  color: #f50000 !important;
+}
+
+/* Estilos del cuerpo de la página en modo oscuro */
+body.dark-mode h1,
+body.dark-mode h2, 
+body.dark-mode h3,
+body.dark-mode h4, 
+body.dark-mode p {
+  color: #ffffff;
+}
+
+/* Estilos para el dropdown */
+.navbar .dropdown-menu {
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #0056b3;
+  border-left: 4px solid #0056b3;
+}
+
+/* Efecto de sombra y borde redondeado en el dropdown */
+.dropdown-menu {
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Sombra para el dropdown cuando está abierto */
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s ease;
+}

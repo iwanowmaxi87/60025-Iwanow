@@ -1,0 +1,21 @@
+.image-grid-container {
+    width: 100%;
+    padding: 20px;
+    
+    
+  }
+  
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  
+  .img-fluid:hover {
+    transform: scale(1.1);
+    
+  }
+  

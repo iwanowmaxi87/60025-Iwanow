@@ -1,0 +1,50 @@
+.special-offers {
+    padding: 20px;
+  }
+  
+  .offer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .offer-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    width: calc(25% - 20px); /* 4 columnas */
+  }
+  
+  .offer-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .offer-item h4 {
+    font-size: 1.2rem;
+  }
+  
+  .offer-item p {
+    color: #666;
+  }
+  
+  .price {
+    color: #d9534f;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #218838;
+  }
+  

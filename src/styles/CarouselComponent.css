@@ -1,0 +1,14 @@
+
+
+.customCarousel {
+    width: 100%; 
+    max-width: 100vw; 
+    margin: 0 auto; 
+  }
+  
+  .customCarousel img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del carrusel */
+    height: 500px; /* Ajusta la altura del carrusel según sea necesario */
+    object-fit: cover; /* Asegura que la imagen cubra el área del carrusel sin distorsionarse */
+  }
+  
