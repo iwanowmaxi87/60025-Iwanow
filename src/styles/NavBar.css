@@ -14,7 +14,7 @@
 .navbar-nav .nav-link {
   position: relative;
   margin-right: 1rem;
-  color: #333; /* Color del enlace en modo claro */
+  color: #333; 
 }
 
 .nav-link {
@@ -27,7 +27,7 @@
 }
 
 .nav-item a:hover {
-  color: #f50000; /* Color al pasar el mouse sobre los enlaces */
+  color: #f50000; 
 }
 
 /* Estilo para el cart widget */
@@ -92,6 +92,7 @@ body.dark-mode h4,
 body.dark-mode p {
   color: #ffffff;
 }
+
 
 /* Estilos para el dropdown */
 .navbar .dropdown-menu {

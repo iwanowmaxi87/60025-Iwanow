@@ -96,8 +96,13 @@ function NavBar() {
                 </Link>
               </li>
               <li>
-                <Link className="dropdown-item" to="/category/pedales">
+                <Link className="dropdown-item" to="/category/consolas">
                   Consolas
+                </Link>
+              </li>
+              <li>
+                <Link className="dropdown-item" to="/category/microfonos">
+                  Microfonos
                 </Link>
               </li>
             </ul>

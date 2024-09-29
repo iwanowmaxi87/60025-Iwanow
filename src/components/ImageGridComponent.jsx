@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importar Link
+import { Link } from 'react-router-dom'; 
 import img1 from '../img/cuerdas.jpg';
 import img2 from '../img/auris.jpg';
 import img3 from '../img/ampli.jpg';

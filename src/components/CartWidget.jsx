@@ -8,8 +8,8 @@ import '../CartWidget.css';
 function CartWidget() {
   const { cart } = useContext(CartContext);
 
-  // Calcular la cantidad total de items en el carrito
-  const totalItems = cart.reduce((acc, item) => acc+ 1, 0);
+  // Calcular la cantidad total de productos en el carrito (sumar las cantidades)
+  const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
     <div className="cart-widget">

@@ -22,22 +22,22 @@ function Header() {
     if (location.pathname.startsWith('/category')) {
       // Verifica la categoría actual para determinar la imagen adecuada
       if (location.pathname.includes('baterias')) {
-        return acusticBateriaImg; // Imagen para la sección de Baterías Acústicas
+        return acusticBateriaImg; 
       }
       if (location.pathname.includes('guitarraAcustica')) {
-        return guitarraAcusticaImg; // Imagen para la sección de Guitarras Acústicas
+        return guitarraAcusticaImg; 
       }
       if (location.pathname.includes('bajo')) {
-        return catalogImg; // Imagen para la sección de Guitarras Acústicas
+        return catalogImg; 
       }
       if (location.pathname.includes('guitarraElectrica')) {
-        return guitarraElectricaImg; // Imagen para la sección de Guitarras Acústicas
+        return guitarraElectricaImg; 
       }
       if (location.pathname.includes('amplificadores')) {
-        return ampliImg; // Imagen para la sección de Guitarras Acústicas
+        return ampliImg; 
       }
 
-      return catalogImg; // Imagen por defecto para otras categorías
+      return catalogImg; 
     }
     if (location.pathname.startsWith('/item')) {
       return productImg;

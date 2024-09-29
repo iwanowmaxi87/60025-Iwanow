@@ -7,7 +7,7 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 function Footer() {
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="containerFoot">
         <div className="row">
           {/* Primera columna: Dirección */}
           <div className="col-md-3">

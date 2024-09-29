@@ -128,7 +128,7 @@
     width: 100%;
     padding: 10px;
     border-radius: 8px;
-    background-color: #2ecc71;
+    background-color: #282928;
     color: white;
     font-size: 1.2rem;
     text-align: center;
@@ -138,6 +138,6 @@
   }
   
   .add-to-cart-btn:hover {
-    background-color: #279aae;
+    background-color: #05aecc;
   }
   

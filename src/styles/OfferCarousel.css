@@ -44,7 +44,7 @@
   width: 200px; 
   height: 150px;
   object-fit: cover; 
-  transition: transform 0.3s ease;
+  transition: transform 0.1s ease;
    
 }
 

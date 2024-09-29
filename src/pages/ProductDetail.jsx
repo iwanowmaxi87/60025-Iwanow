@@ -17,9 +17,11 @@ function ProductDetail() {
   const { addToCart } = useContext(CartContext);
   const [quantity, setQuantity] = useState(1);
   const [shippingMethod, setShippingMethod] = useState('standard');
-
+  const [paymentMethod, setPaymentMethod] = useState('');
   const products = [
-    // Guitarras
+
+
+    // Guitarras**********************************************************
     { 
       id: 1, 
       category: 'Guitarras', 
@@ -77,7 +79,9 @@ function ProductDetail() {
       paragraph: 'La Electromatic LTD es una guitarra eléctrica de edición limitada con un estilo distintivo y un sonido poderoso.'
     },
 
-    // Bajos
+
+
+    // Bajos**********************************************************
     { 
       id: 4, 
       category: 'Bajos', 
@@ -93,7 +97,7 @@ function ProductDetail() {
       paragraph: 'El Bajo Fender Player combina un estilo moderno con el sonido clásico, ideal para cualquier bajista profesional o aficionado.'
     },
 
-    // Baterías
+    // Baterías**********************************************************
     { 
       id: 5, 
       category: 'Baterías', 
@@ -123,7 +127,7 @@ function ProductDetail() {
       paragraph: 'La Yamaha Stage es una batería versátil, perfecta para bateristas que buscan calidad y durabilidad.'
     },
 
-    // Amplificadores
+    // Amplificadores**********************************************************
     { 
       id: 7, 
       category: 'Amplificadores', 
@@ -153,7 +157,7 @@ function ProductDetail() {
       paragraph: 'El amplificador Vox ofrece un sonido vintage y es altamente apreciado por su calidad tonal y diseño retro.'
     },
 
-    //Accesorios
+    //Accesorios**********************************************************
     { 
       id: 9, 
       category: 'Accesorios', 
@@ -184,11 +188,11 @@ function ProductDetail() {
       paragraph: 'Los auriculares Vox Silent Session están diseñados para ofrecer un sonido claro y preciso, perfecto para largas sesiones de grabación o escucha.'
     },
 
-    // Auriculares
+    // Auriculares**********************************************************
     { 
       id: 12, 
       category: 'Auriculares', 
-      name: 'Auriculares Vox', 
+      name: 'Auriculares Vox Vhq1', 
       description: 'Un juego de auriculares Vox Silent Session Studio le proporcionará un sinfín de horas de disfrute de calidad.', 
       price: 55500, 
       image: 'https://bairesrocks.vteximg.com.br/arquivos/ids/228100/main_c5f56c81.jpg',
@@ -203,7 +207,7 @@ function ProductDetail() {
     { 
       id: 13, 
       category: 'Auriculares', 
-      name: 'Auriculares Vox', 
+      name: 'Auriculares AKG K175', 
       description: 'Un juego de auriculares Vox Silent Session Studio le proporcionará un sinfín de horas de disfrute de calidad.', 
       price: 55500, 
       image: 'https://bairesrocks.vteximg.com.br/arquivos/ids/226942/preview--7-.jpg?v=637583480631930000',
@@ -212,7 +216,7 @@ function ProductDetail() {
         'https://example.com/vox-auriculares2.jpg',
         'https://example.com/vox-auriculares3.jpg'
       ],
-      paragraph: 'Los auriculares Vox Silent Session están diseñados para ofrecer un sonido claro y preciso, perfecto para largas sesiones de grabación o escucha.'
+      paragraph: 'Características principales Mejore la práctica y el monitoreo de su guitarra con un sonido cristalino Experiencia de sonido excepcional con cancelación de ruido y filtrado de sonido Disfrute del control del sonido con botones inteligentes de monitorización y mejora del sonido Un juego dinámico de auriculares multiusos - úsalos para todo'
     }
   ];
 
@@ -231,7 +235,7 @@ function ProductDetail() {
             <div className="product-details">
               <h1>{product.name}</h1>
               <p>{product.description}</p>
-              <p>{product.paragraph}</p> {/* Párrafo adicional */}
+              <p>{product.paragraph}</p> 
               <p><strong>Precio: ${product.price}</strong></p>
               <div className="quantity-selector">
                 <label>Cantidad:</label>
@@ -254,18 +258,7 @@ function ProductDetail() {
                 <img key={index} src={imgUrl} alt={`${product.name} extra ${index + 1}`} className="extra-image" />
               ))}
             </div>
-          </div>
-
-          {/* Medios de pago */}
-          <div className="payment-methods">
-            <h3>Medios de Pago</h3>
-            <div className="payment-options">
-              <div className="payment-option"><i className="fas fa-credit-card"></i> Tarjeta de Crédito</div>
-              <div className="payment-option"><i className="fas fa-money-bill-wave"></i> Tarjeta de Débito</div>
-              <div className="payment-option"><i className="fas fa-wallet"></i> Mercado Pago</div>
-              <div className="payment-option"><i className="fas fa-university"></i> Transferencia Bancaria</div>
-            </div>
-          </div>
+          </div>          
 
           {/* Formas de envío */}
           <div className="shipping-methods">
@@ -280,16 +273,6 @@ function ProductDetail() {
                   onChange={() => setShippingMethod('standard')} 
                 /> 
                 <i className="fas fa-truck"></i> Envío Estándar
-              </label>
-              <label>
-                <input 
-                  type="radio" 
-                  name="shipping" 
-                  value="express" 
-                  checked={shippingMethod === 'express'} 
-                  onChange={() => setShippingMethod('express')} 
-                /> 
-                <i className="fas fa-shipping-fast"></i> Envío Expreso
               </label>
             </div>
           </div>

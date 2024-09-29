@@ -1,4 +1,4 @@
-// src/context/CartContext.js
+
 
 import React, { createContext, useState } from 'react';
 
@@ -11,7 +11,7 @@ export const CartProvider = ({ children }) => {
     setCart((prevCart) => {
       const existingItemIndex = prevCart.findIndex(cartItem => cartItem.id === item.id);
       if (existingItemIndex > -1) {
-        // Update quantity if item already exists
+        
         const updatedCart = [...prevCart];
         updatedCart[existingItemIndex] = {
           ...updatedCart[existingItemIndex],
@@ -19,7 +19,7 @@ export const CartProvider = ({ children }) => {
         };
         return updatedCart;
       } else {
-        // Add new item to cart
+        
         return [...prevCart, item];
       }
     });
@@ -49,8 +49,10 @@ export const CartProvider = ({ children }) => {
   };
 
   const getItemCount = () => {
-    return cart.length;
+    
+    return cart.reduce((total, item) => total + item.quantity, 0);
   };
+  
 
   return (
     <CartContext.Provider value={{ cart, addToCart, updateItemQuantity, removeFromCart, clearCart, calculateTotal, getItemCount }}>
