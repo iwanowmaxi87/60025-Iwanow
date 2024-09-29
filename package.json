@@ -1,8 +1,7 @@
 {
   "name": "60025-iwanow",
   "version": "0.1.0",
-  "private": true,
-  "homepages": "https://iwanowmaxi87.github.io/60025-Iwanow/",
+  "private": true,  
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
@@ -25,9 +24,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+  "scripts": {    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
