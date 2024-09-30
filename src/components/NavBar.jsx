@@ -1,3 +1,4 @@
+// src/components/NavBar.jsx
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
@@ -19,25 +20,34 @@ function NavBar() {
   return (
     <nav className={`navbar navbar-expand-lg ${darkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'} shadow-sm`}>
       <Link to="/" className="navbar-brand">
-        <img src={imgLogo} alt="Logo" className="imgLogo" />
+        <img src={imgLogo} alt="Logo de la Empresa" className="imgLogo" />
       </Link>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button 
+        className="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav mr-auto">
-          {/* Dropdown para Guitarras & Bajos */}
+          
           <li className="nav-item dropdown">
-            <a
-              className="nav-link dropdown-toggle"
-              href="#"
+            
+            <button
+              className="nav-link dropdown-toggle btn btn-link"
               id="navbarDropdown"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              style={{ textDecoration: 'none', color: darkMode ? '' : '' }}
             >
               Guitarras & Bajos
-            </a>
+            </button>
             <ul className="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
               <li>
                 <Link className="dropdown-item" to="/category/guitarraElectrica">
@@ -67,18 +77,19 @@ function NavBar() {
             </ul>
           </li>
 
-          {/* Dropdown para Audio & Sonido */}
+          
           <li className="nav-item dropdown">
-            <a
-              className="nav-link dropdown-toggle"
-              href="#"
+            
+            <button
+              className="nav-link dropdown-toggle btn btn-link"
               id="audioSonidoDropdown"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              style={{ textDecoration: 'none', color: darkMode ? '' : '' }}
             >
               Audio & Sonido
-            </a>
+            </button>
             <ul className="dropdown-menu shadow-lg rounded" aria-labelledby="audioSonidoDropdown">
               <li>
                 <Link className="dropdown-item" to="/category/amplificadores">
@@ -102,7 +113,7 @@ function NavBar() {
               </li>
               <li>
                 <Link className="dropdown-item" to="/category/microfonos">
-                  Microfonos
+                  Micrófonos
                 </Link>
               </li>
             </ul>
@@ -118,10 +129,13 @@ function NavBar() {
         <button className="btn btn-outline-secondary mr-2" onClick={toggleDarkMode}>
           {darkMode ? 'Modo Claro' : 'Modo Oscuro'}
         </button>
-        <Link to="/cart" className="nav-link">
+        <Link to="/cart" className="nav-link position-relative">
           <FontAwesomeIcon icon={faShoppingCart} size="lg" />
           {getItemCount() > 0 && (
-            <span className="cart-count">{getItemCount()}</span>
+            <span className="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              {getItemCount()}
+              <span className="visually-hidden">items en el carrito</span>
+            </span>
           )}
         </Link>
       </div>
@@ -130,3 +144,4 @@ function NavBar() {
 }
 
 export default NavBar;
+

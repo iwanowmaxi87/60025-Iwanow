@@ -9,32 +9,29 @@ function CarouselComponent() {
   return (
     <Carousel className="customCarousel">
       <Carousel.Item>
-        <a href="https://www.kwcables.com/" target="_blank" rel="noopener noreferrer">
+        <li href="https://www.kwcables.com/" target="_blank" rel="noopener noreferrer">
           <img className="d-block w-100" src={publi1} alt="Imagen 1" />
-        </a>
+        </li>
         <Carousel.Caption>
-          <h3></h3>
-          <p></p>
+          
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
-        <a href="https://www.gretschguitars.com/" target="_blank" rel="noopener noreferrer">
+        <li href="https://www.gretschguitars.com/" target="_blank" rel="noopener noreferrer">
           <img className="d-block w-100" src={publi2} alt="Imagen 2" />
-        </a>
+        </li>
         <Carousel.Caption>
-          <h3></h3>
-          <p></p>
+          
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
-        <a href="https://www.santander.com.ar/personas" target="_blank" rel="noopener noreferrer">
+        <li href="https://www.santander.com.ar/personas" target="_blank" rel="noopener noreferrer">
           <img className="d-block w-100" src={publi3} alt="Imagen 3" />
-        </a>
+        </li>
         <Carousel.Caption>
-          <h3></h3>
-          <p></p>
+          
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
