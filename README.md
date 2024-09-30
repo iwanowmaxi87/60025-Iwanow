@@ -1,3 +1,5 @@
+https://github.com/user-attachments/assets/4055db40-2a39-4f26-b57d-30e0f4f1c678
+
 # E-Commerce de Instrumentos Musicales 🎸
 
 Este proyecto es un sitio de e-commerce para la venta de instrumentos musicales, incluyendo guitarras, bajos, baterías, amplificadores, y más. El proyecto está desarrollado con **React** y utiliza **Firebase** para la gestión de productos y el sistema de carrito de compras.
