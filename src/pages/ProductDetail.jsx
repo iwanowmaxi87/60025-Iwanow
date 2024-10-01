@@ -16,7 +16,8 @@ function ProductDetail() {
   const { itemId } = useParams();
   const { addToCart } = useContext(CartContext);
   const [quantity, setQuantity] = useState(1);
-  const [shippingMethod, setShippingMethod] = useState('standard');  
+  const [shippingMethod, setShippingMethod] = useState('standard');
+  
   const products = [
 
 
