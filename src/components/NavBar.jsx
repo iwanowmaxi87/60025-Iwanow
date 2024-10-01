@@ -38,14 +38,13 @@ function NavBar() {
           
           <li className="nav-item dropdown">
             
-            <button
-              className="nav-link dropdown-toggle btn btn-link"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              style={{ textDecoration: 'none', color: darkMode ? '' : '' }}
-            >
+          <button
+  className="nav-link dropdown-toggle dropdown-toggle-btn"
+  id="navbarDropdown"
+  role="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+>
               Guitarras & Bajos
             </button>
             <ul className="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
@@ -80,14 +79,13 @@ function NavBar() {
           
           <li className="nav-item dropdown">
             
-            <button
-              className="nav-link dropdown-toggle btn btn-link"
-              id="audioSonidoDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              style={{ textDecoration: 'none', color: darkMode ? '' : '' }}
-            >
+          <button
+  className="nav-link dropdown-toggle dropdown-toggle-btn"
+  id="navbarDropdown"
+  role="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+>
               Audio & Sonido
             </button>
             <ul className="dropdown-menu shadow-lg rounded" aria-labelledby="audioSonidoDropdown">

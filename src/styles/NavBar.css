@@ -148,3 +148,18 @@ body.dark-mode p {
   transition: all 0.2s ease;
 }
 
+/* Estilos para el botón en modo claro */
+.dropdown-toggle-btn {
+  text-decoration: none; /* Evita el subrayado */
+  color: #333; /* Color del texto en modo claro */
+}
+
+/* Estilos para el botón en modo oscuro */
+body.dark-mode .dropdown-toggle-btn {
+  color: #fff; /* Color del texto en modo oscuro */
+}
+
+/* Estilo adicional (hover) */
+.dropdown-toggle-btn:hover {
+  color: #f50000; 
+}
